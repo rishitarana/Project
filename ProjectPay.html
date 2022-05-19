@@ -1,1 +1,62 @@
+<html lang="en">
+<head>
+    
+    <title>Payment</title>
+    <link rel="stylesheet" href="ProjectPay.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <script type = "text/javascript">  
+        function fun() {  
 
+
+           alert ("Congrats! Your payment is successful.");  
+        }  
+  </script>      
+
+</head>
+<body>
+    <style>
+        body{
+            background: linear-gradient(180deg,Pink,white);
+        }
+    </style>
+    <div class="container" id="right">
+        <form action="" method="post">
+            <h1 class="main-heading">Payment Form</h1>
+            <hr>
+            <p>Required fields followed by *</p>
+            <h2>Contact Information</h2>
+            <p>Name: *<input type="text" name="name" required placeholder="Harry Potter"></p>
+            <fieldset>
+                <legend>Gender*</legend>
+            <p>
+                Male <input type="radio" name="gender" id="male" required>
+                Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="100" rows="8" placeholder="Enter your address"></textarea></p>
+       
+        <p>Email: *<input type="email" name="email" id="email" required placeholder="pharry@gmail.com"></p>
+        <p>Pincode: *<input type="number" name="pincode" id="pincode" required placeholder="123456"></p>
+        <h2>Payment Information</h2>
+        <p>Card Type: *
+            <select name="card" id="card_type" required>
+                <option value="">--Select a card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+        </p>
+        <p>
+            Card Number *<input type="number" name="card_number" id="card_number" required placeholder="1234-5678-9012-3456">
+        </p>
+        <p>
+            Expiration Date: *<input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>Amount(Rs)<input type="number" name="cvv" id="cvv" required placeholder="000"><a href="calculator.html"><i class="fas fa-calculator"></i></a></p>
+        
+        <p>CVV *<input type="password" name="cvv" id="cvv" required placeholder="000"></p>
+        <input type = "button" class="button" value = "Pay Now" onclick = "fun();">
+      
+    
+</body>
+</html>
